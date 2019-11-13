@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <title>New Business</title>
+    </h:head>
+    <h:body>
+        <h1>New Business</h1>
+        <p:tabView>
+            <p:tab title="General Details">
+                <h:form>
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <p:outputLabel for="illustrative">Is this quote for illustrative purposes only?</p:outputLabel>
+                        <p:selectBooleanCheckbox id="illustrative"/>
+
+                        <p:outputLabel for="commencement">Proposed Commencement Date</p:outputLabel>
+                        <p:datePicker id="commencement" showIcon="true"></p:datePicker>
+
+                        <p:outputLabel for="employer">Employer Name</p:outputLabel>
+                        <p:inputText id="employer"/>
+
+                        <p:outputLabel for="business">Employer Type of Business</p:outputLabel>
+                        <p:selectOneMenu id="business">
+                            <f:selectItem itemLabel="Association"/>
+                            <f:selectItem itemLabel="Business Trust"/>
+                            <f:selectItem itemLabel="CC"/>
+                            <f:selectItem itemLabel="Co-Op"/>
+                            <f:selectItem itemLabel="Company (Pty) Ltd"/>
+                            <f:selectItem itemLabel="Company Ltd"/>
+                            <f:selectItem itemLabel="Incorporation"/>
+                            <f:selectItem itemLabel="NGO"/>
+                            <f:selectItem itemLabel="Partnership"/>
+                            <f:selectItem itemLabel="Sole Proprieter"/>
+                        </p:selectOneMenu>
+                    </h:panelGrid>
+                </h:form>
+            </p:tab>
+            <p:tab title="Member File Upload">
+                <h:panelGrid cellpadding="10">
+                    <h:outputText value="Francis Ford Coppola's legendary continuation and sequel to his landmark 1972 film, The_Godfather, parallels the young Vito Corleone's rise with his son Michael's spiritual fall, deepening The_Godfather's depiction of the dark side of the American dream.
+                                  In the early 1900s, the child Vito flees his Sicilian village for America after the local Mafia kills his family. Vito struggles to make a living, legally or illegally, for his wife and growing brood in Little Italy,
+                                  killing the local Black Hand Fanucci after he demands his customary cut of the tyro's business. With Fanucci gone, Vito's communal stature grows." />
+                </h:panelGrid>
+            </p:tab>
+            <p:tab title="Benefit Structure">
+                <h:panelGrid cellpadding="10">
+                    <h:outputText value="After a break of more than 15 years, director Francis Ford Coppola and writer Mario Puzo returned to the well for this third and final story of the fictional Corleone crime family.
+                                  Two decades have passed, and crime kingpin Michael Corleone, now divorced from his wife Kay has nearly succeeded in keeping his promise that his family would one day be completely legitimate." />
+                </h:panelGrid>
+            </p:tab>
+            <p:tab title="Validate">
+                <h:panelGrid cellpadding="10">
+                    <h:outputText value="After a break of more than 15 years, director Francis Ford Coppola and writer Mario Puzo returned to the well for this third and final story of the fictional Corleone crime family.
+                                  Two decades have passed, and crime kingpin Michael Corleone, now divorced from his wife Kay has nearly succeeded in keeping his promise that his family would one day be completely legitimate." />
+                </h:panelGrid>
+            </p:tab>
+        </p:tabView>   
+    </h:body>
+</html>
